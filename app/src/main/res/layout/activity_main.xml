@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3B8457"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:typeface="monospace"
+        android:textColor="#3B8457"
+        android:backgroundTint="#e3ba53"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"
+        android:onClick="btn_Reset"
+        app:cornerRadius="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Your Character"
+        android:textColor="#e3ba53"
+        android:typeface="monospace"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="25dp"
+        android:id="@+id/chooseChara"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chooseChara"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <ImageView
+        android:id="@+id/imgAlien"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/peep_95"
+
+        tools:layout_editor_absoluteX="88dp" />
+        <ImageView
+            android:id="@+id/imgEinstein"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/einstein"
+            tools:layout_editor_absoluteX="88dp" />
+        <ImageView
+            android:id="@+id/imgAfro"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/afro"
+            tools:layout_editor_absoluteX="88dp" />
+        <ImageView
+            android:id="@+id/imgElPatrol"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/el_patrol"
+            tools:layout_editor_absoluteX="88dp" />
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/pickAName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pick A Name"
+        android:textColorHint="#e3ba53"
+        android:textColor="#e3ba53"
+        android:typeface="monospace"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:textAlignment="center"
+        android:inputType="textPersonName"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnAlien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3B8457"
+            android:backgroundTint="#e3ba53"
+            android:text="Alien"
+            android:typeface="monospace"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:iconTintMode="add"
+            app:cornerRadius="20dp"
+            android:onClick="btn_Alien"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="396dp" />
+
+        <Button
+            android:id="@+id/btnEinstein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3B8457"
+            android:backgroundTint="#e3ba53"
+            android:text="Einstein"
+            android:typeface="monospace"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:iconTintMode="add"
+            app:cornerRadius="20dp"
+            android:onClick="btn_Einstein"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="396dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <Button
+        android:id="@+id/btnAfro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3B8457"
+        android:backgroundTint="#e3ba53"
+        android:text="Afro"
+        android:typeface="monospace"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:onClick="btn_Afro"
+        app:iconTintMode="add"
+        app:cornerRadius="20dp"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="396dp" />
+
+    <Button
+        android:id="@+id/btnElPatrol"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:textColor="#3B8457"
+        android:backgroundTint="#e3ba53"
+        android:text="El Patrol"
+        android:typeface="monospace"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:onClick="btn_ElPatrol"
+        app:iconTintMode="add"
+        app:cornerRadius="20dp"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="396dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnIntroduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduce yourself"
+        android:layout_marginTop="50dp"
+        android:textColor="#3B8457"
+        android:backgroundTint="#e3ba53"
+        android:layout_gravity="center"
+        android:onClick="btn_Introduce"
+        app:cornerRadius="20dp"
+        />
+
+
+
+
+
+
+
+
+</LinearLayout>
